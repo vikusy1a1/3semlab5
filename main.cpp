@@ -84,17 +84,17 @@ public:
 };
 
 int main() {
-    std::cout << "Welcome to the Traffic Police Automated Workstation!\n";
+    std::cout << "Welcome to the automated workplace of the Traffic Police!\n";
 
     // Создаем объект транспортного средства с помощью фабрики
     Transport* transport = TransportFactory::createTransport("car");
     if (transport) {
         transport->inputData();
-        std::cout << "\nVehicle successfully added!\n";
+        std::cout << "\nTransport added successfully!\n";
         transport->displayInfo();
         delete transport;
     } else {
-        std::cout << "Error: Invalid vehicle type.\n";
+        std::cout << "Error: Invalid transport type.\n";
     }
 
     return 0;
